@@ -44,9 +44,11 @@
 \newcommand{\myrbrace}[2]{\vspace{#2pt}\scaleleftright[\dimexpr5pt+#1\dimexpr0.06pt]{.}{\rule[\dimexpr2pt-#1\dimexpr0.5pt]{-4pt}{#1pt}}{\rbrace}\hspace{6pt}}
 \usepackage{ulem} % Line across text
 \newcommand{\white}[1]{{\textcolor{white}{#1}}} % White text
+\usepackage{pifont} % Custom bullet points
+\usepackage[many]{tcolorbox} % Figure border
 
 % Here's where the presentation starts, with the info for the title slide
-\title[$h^+h^-\pi^+\pi^-$]{Model-independent measurement of $\gamma$ in $B^\pm\to[h^+h^-\pi^+\pi^-]_Dh^\pm$ at LHCb and BESIII}
+\title[$h^+h^-\pi^+\pi^-$]{Model-independent measurement of \texorpdfstring{$\gamma$}{gamma} in \texorpdfstring{$B^\pm\to[h^+h^-\pi^+\pi^-]_Dh^\pm$}{B2DhD2hhpipi} at LHCb and BESIII}
 
 \author{Martin Tat}
 \institute{Oxford LHCb}
@@ -71,7 +73,7 @@
 
 \begin{frame}{Introduction}
   \begin{center}
-    \large{Last presentation since starting my PhD journey 1295 days ago!}
+    \large{\underline{Last presentation} since starting my PhD journey 1295 days ago!}
   \end{center}
   \vspace{0.1cm}
   \begin{enumerate}
@@ -85,7 +87,7 @@
   \end{figure}
   \begin{enumerate}
     \setlength\itemsep{0.7em}
-    \setcounter{enumi}{3}
+    \setcounter{enumi}{2}
     \item{January 2023: Model-dependent $\gamma$ publication with $3~\sigma$ tension}
     \item{March 2024: BESIII $c_i$/$s_i$ analysis approved by review committee}
     \item{April 2024: Presented $B^\pm\to [h^+h^-\pi^+\pi^-]_Dh^\pm$ to B2OC}
@@ -895,6 +897,43 @@
     \end{enumerate}
     \item{Main takeaway: Important to meausure $\gamma$ \underline{model independently}!}
   \end{enumerate}
+\end{frame}
+
+\begin{frame}{Summary and next steps}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      My thesis is slowly taking shape...
+      \vspace{0.5cm}
+      {\scriptsize
+      \begin{itemize}
+        \item[\ding{111}]{1. Introduction}
+        \item[\ding{051}]{2. Theoretical background}
+        \item[\ding{111}]{3. Optimised binning scheme for $D^0\to K^+K^-\pi^+\pi^-$}
+        \item[\ding{111}]{4. The BESIII detector}
+        \item[\ding{111}]{5. Selection of single- and double-tag events}
+        \item[\ding{111}]{6. Measurement of strong-phase differences}
+        \item[\ding{111}]{7. The LHCb detector}
+        \item[\ding{111}]{8. Selection of $B^\pm\to[h^+h^-\pi^+\pi^-]_Dh^\pm$ events}
+        \item[\ding{111}]{9. Model-independent measurement of $\gamma$}
+        \item[\ding{111}]{10. Summary and outlook}
+      \end{itemize}}
+      \vspace{0.4cm}
+    ... I will do my best to stop procrastinating!
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \vspace{-0.8cm}
+      \begin{tcolorbox}[beamer,
+                        width=1.0\textwidth,
+                        arc=0pt,
+                        boxsep=0pt,
+                        left=0pt,right=0pt,top=0pt,bottom=0pt,
+                        enhanced jigsaw,
+                        opacityback=0.0,
+                        ]
+        \includegraphics[width=1.0\textwidth]{Plots/PhDThesis_MartinDuyTat_FrontPage.pdf}
+      \end{tcolorbox}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Summary and next steps}
